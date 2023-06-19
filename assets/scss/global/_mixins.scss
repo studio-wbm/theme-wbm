@@ -1,0 +1,78 @@
+@mixin font-face($name, $path, $weight: null, $style: null, $type: 'typo'){
+  @if ($type == 'typo'){
+    @font-face{
+      font-family:$name;
+      font-style:$style;
+      font-weight:$weight;
+      font-display: swap;
+      src:url($path +'.eot');
+      src:url($path +'.eot?#iefix') format('embedded-opentype'),
+      url($path +'.woff2') format('woff2'),
+      url($path +'.woff') format('woff'),
+      url($path +'.ttf') format('truetype'),
+      url($path +'.svg#svgFontName') format('svg');
+    }
+  } @else if ($type == 'no_woff2'){
+    @font-face{
+      font-family:$name;
+      font-style:$style;
+      font-weight:$weight;
+      font-display: swap;
+      src:url($path +'.eot');
+      src:url($path +'.eot?#iefix') format('embedded-opentype'),
+      url($path +'.woff') format('woff'),
+      url($path +'.ttf') format('truetype'),
+      url($path +'.svg#svgFontName') format('svg');
+    }
+  }
+}
+
+@mixin background_gradiant($first_color, $second_color, $type){
+  $direction : top; $directionTo:bottom; $ie:0;
+
+  @if ($type == 'horizontal'){
+    $direction:left;
+    $directionTo:to right;
+    $ie:1;
+  } @else if ($type == 'vertical'){
+    $direction:top;
+    $directionTo:to bottom;
+    $ie:0;
+  } @else if ($type == 'diagonale') {
+    $direction:-45deg;
+    $directionTo:135deg;
+    $ie:1;
+  }
+
+  background:$first_color;
+  background:-moz-linear-gradient($direction, $first_color 1%, $second_color 100%);
+  background:-webkit-linear-gradient($direction, $first_color 1%, $second_color 100%);
+  background:linear-gradient($directionTo, $first_color 1%, $second_color 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=$first_color, endColorstr=$second_color, GradientType=0);
+}
+
+@mixin extra-large {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin large {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+@mixin extra-large {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin medium {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin small {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}

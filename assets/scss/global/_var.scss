@@ -1,0 +1,108 @@
+//Fonts
+@include font-face("happiness", "/wp-content/themes/wbm/assets/fonts/Happiness/HappinessV", 300, 'normal', 'no_woff2');
+$fontHappiness:'happiness', sans-serif;
+
+@include font-face("happiness-light", "/wp-content/themes/wbm/assets/fonts/Happiness/HappinessV-Light", 300, 'normal', 'no_woff2');
+$fontHappinessLight:'happiness-light', sans-serif;
+
+@include font-face("trebuchet", "/wp-content/themes/wbm/assets/fonts/Trebuchet/TrebuchetMS", 300, 'normal', 'no_woff2');
+$fontTrebuchet:'trebuchet', sans-serif;
+
+//Colors
+$colorFirst:#00558A;
+$colorSecond:#514848;
+$colorWhite:white;
+$colorBlack:black;
+$colorGrey:#A1A1A1;
+$colorLight:#F6F6F6;
+
+//FontSizes
+$FSBiggest:24px;
+$FSBigger:18px;
+$FSNormal:16px;
+$FSSmaller:14px;
+$FSSmallest:13px;
+
+
+*, a, div {
+    font-family: $fontTrebuchet;
+    font-size: 16px;
+    color: $colorSecond;
+    line-height: 22px;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+//Btns
+.btn-primary {
+    transition: all 300ms;
+
+    &:hover {
+    }
+}
+
+.btn-secondary {
+    transition: all 300ms;
+
+    &:hover {
+    }
+}
+
+body {
+    // background-color: red;
+}
+
+// Fonts
+h1 {
+
+    @include medium {
+    }
+}
+
+h2 {
+
+    @include medium {
+    }
+}
+
+h3 {
+
+    @include medium {
+    }
+}
+
+h4 {
+
+    @include medium {
+    }
+}
+
+h5 {
+
+    @include medium {
+    }
+}
+
+h6 {
+
+    @include medium {
+    }
+}
+
+// Containers paddings
+.container, .container-fluid {
+    padding: 0px 18px;
+}
+.row {
+    margin-right: -18px;
+    margin-left: -18px;
+}
+.row>* {
+    padding-right: 18px;
+    padding-left: 18px;
+}
