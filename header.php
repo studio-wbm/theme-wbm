@@ -83,7 +83,7 @@
                                     <?php echo $link['title'] ?>
                                 </a>
                             <?php } ?>
-                        <img class="btn-burger d-md-none d-flex" src="/wp-content/themes/wbm/assets/images/icons/menu_black.svg" alt="">
+                        <!-- <img class="btn-burger d-md-none d-flex" src="/wp-content/themes/wbm/assets/images/icons/menu_black.svg" alt=""> -->
                     </nav>
                 </div>
             </div>

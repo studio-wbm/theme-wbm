@@ -1,16 +1,21 @@
 # Thème WBM
 
+###Description
+* 🪄 SCSS : Compilation et minification dans un seul fichier CSS
+* 🚀 JS : Compilation et minification dans un seul fichier JS
+* ⚡ Hot reloading
+* 🖼️ Images PNG et JPEG convertis automatiquement au format WEBP
+
 ### Prérequis
-Node 14.17.1 (10.13.0)
+🛠️ Node ```18.15.0```
 
 ### Installation
   * **Wordpress**
     * Base de données (BDD) :
       * Créer votre BDD
       * Récupérer un dump, et insérer le dans la BDD
-    * Dans ```wp-config.php```
-        * Rajouter votre domaine dans le switch
-        * Mettre le chemin vers votre config ```config/xxxx/xxxx```
-    * Créer ensuite votre config, en prenant comme example ```_sample_config.php```
-    * ```npm i```
-    * ```npm run watch ```
+    * changer l'url dans le fichier ```gulpfile.js ```
+      * ```browserSync.init({ proxy: "mon_url_localhost" });```
+    *  Dans un terminal
+        * ```npm i``` (Installation des modules node)
+        * ```npx gulp``` (Démarrage du serveur)

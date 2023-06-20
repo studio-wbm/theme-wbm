@@ -1,0 +1,75 @@
+{
+    "key": "group_64907f92ba635",
+    "title": "Blocs",
+    "fields": [
+        {
+            "key": "field_64907f9fda832",
+            "label": "Blocs",
+            "name": "blocs",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_64907fa7b666a": {
+                    "key": "layout_64907fa7b666a",
+                    "name": "texte_simple",
+                    "label": "Texte simple",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64907fb7da833",
+                            "label": "Texte",
+                            "name": "texte",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1687268893
+}

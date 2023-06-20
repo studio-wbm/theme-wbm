@@ -5,12 +5,12 @@
       font-style:$style;
       font-weight:$weight;
       font-display: swap;
-      src:url($path +'.eot');
-      src:url($path +'.eot?#iefix') format('embedded-opentype'),
-      url($path +'.woff2') format('woff2'),
-      url($path +'.woff') format('woff'),
-      url($path +'.ttf') format('truetype'),
-      url($path +'.svg#svgFontName') format('svg');
+      src:url($path+".eot");
+      src:url($path+'.eot?#iefix') format('embedded-opentype'),
+      url($path+'.woff2') format('woff2'),
+      url($path+'.woff') format('woff'),
+      url($path+'.ttf') format('truetype'),
+      url($path+'.svg#svgFontName') format('svg');
     }
   } @else if ($type == 'no_woff2'){
     @font-face{
@@ -18,11 +18,11 @@
       font-style:$style;
       font-weight:$weight;
       font-display: swap;
-      src:url($path +'.eot');
-      src:url($path +'.eot?#iefix') format('embedded-opentype'),
-      url($path +'.woff') format('woff'),
-      url($path +'.ttf') format('truetype'),
-      url($path +'.svg#svgFontName') format('svg');
+      src:url($path+'.eot');
+      src:url($path+'.eot?#iefix') format('embedded-opentype'),
+      url($path+'.woff') format('woff'),
+      url($path+'.ttf') format('truetype'),
+      url($path+'.svg#svgFontName') format('svg');
     }
   }
 }

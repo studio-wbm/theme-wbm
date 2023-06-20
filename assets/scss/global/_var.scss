@@ -1,11 +1,11 @@
 //Fonts
-@include font-face("happiness", "/wp-content/themes/wbm/assets/fonts/Happiness/HappinessV", 300, 'normal', 'no_woff2');
+@include font-face("happiness", "../../assets/fonts/Happiness/HappinessV", 300, 'normal', 'no_woff2');
 $fontHappiness:'happiness', sans-serif;
 
-@include font-face("happiness-light", "/wp-content/themes/wbm/assets/fonts/Happiness/HappinessV-Light", 300, 'normal', 'no_woff2');
+@include font-face("happiness-light", "../../assets/fonts/Happiness/HappinessV-Light", 300, 'normal', 'no_woff2');
 $fontHappinessLight:'happiness-light', sans-serif;
 
-@include font-face("trebuchet", "/wp-content/themes/wbm/assets/fonts/Trebuchet/TrebuchetMS", 300, 'normal', 'no_woff2');
+@include font-face("trebuchet", "../../assets/fonts/Trebuchet/TrebuchetMS", 300, 'normal', 'no_woff2');
 $fontTrebuchet:'trebuchet', sans-serif;
 
 //Colors
@@ -29,6 +29,7 @@ $FSSmallest:13px;
     font-size: 16px;
     color: $colorSecond;
     line-height: 22px;
+    // background-color: blue;
 }
 
 .preload * {
